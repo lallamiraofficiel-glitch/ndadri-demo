@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ndadri - النظارات الذكية</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #0a0a0a; color: white; }
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo { font-size: 24px; font-weight: bold; color: #00d4ff; }
+nav a { color: white; text-decoration: none; margin-left: 15px; font-size: 14px; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 { font-size: 36px; color: #00d4ff; margin-bottom: 15px; }
+.hero p { font-size: 16px; color: #aaa; margin-bottom: 30px; }
+.btn {
+  background: #00d4ff;
+  color: #0a0a0a;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Products */
+.products { padding: 40px 20px; }
+.products h2 { text-align: center; color: #00d4ff; margin-bottom: 30px; font-size: 24px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.card {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #00d4ff22;
+}
+.card .emoji { font-size: 40px; margin-bottom: 10px; }
+.card h3 { font-size: 14px; margin-bottom: 8px; }
+.card .price { color: #00d4ff; font-weight: bold; font-size: 18px; margin-bottom: 12px; }
+.card button {
+  background: #00d4ff;
+  color: #0a0a0a;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #1a1a2e;
+  color: #aaa;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">👓 Ndadri</div>
+  <nav>
+    <a href="#">المنتجات</a>
+    <a href="#">تواصل</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>النظارات الذكية</h1>
+  <p>تكنولوجيا المستقبل على عينيك</p>
+  <a href="#products" class="btn">اكتشف المنتجات</a>
+</section>
+
+<section class="products" id="products">
+  <h2>منتجاتنا</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="emoji">🕶️</div>
+      <h3>نظارة X1 Pro</h3>
+      <div class="price">1,299 درهم</div>
+      <button>أضف للسلة</button>
+    </div>
+    <div class="card">
+      <div class="emoji">👓</div>
+      <h3>نظارة Vision</h3>
+      <div class="price">999 درهم</div>
+      <button>أضف للسلة</button>
+    </div>
+    <div class="card">
+      <div class="emoji">🥽</div>
+      <h3>نظارة Sport</h3>
+      <div class="price">799 درهم</div>
+      <button>أضف للسلة</button>
+    </div>
+    <div class="card">
+      <div class="emoji">✨</div>
+      <h3>نظارة Lite</h3>
+      <div class="price">599 درهم</div>
+      <button>أضف للسلة</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2024 Ndadri.com - جميع الحقوق محفوظة</p>
+  <p style="margin-top:8px">📧 contact@ndadri.com</p>
+</footer>
+
+</body>
+</html>
